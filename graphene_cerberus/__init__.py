@@ -40,5 +40,5 @@ def to_camel_case(snake: str) -> str:
     words = snake.split('_')
     if len(words) <= 1:
         return snake
-    return (words[0]).join(
+    return words[0] + ''.join(
         word.title() for word in words[1:])
